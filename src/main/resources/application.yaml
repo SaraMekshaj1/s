@@ -1,0 +1,16 @@
+# Spring Boot configuration
+spring:
+  # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://horton.db.elephantsql.com/hpssosrm
+    username: hpssosrm
+    password: IBR9bnSeYeOR6GVRTWzPRUFwbMb_JFmZ
+  # JPA properties
+  jpa:
+    hibernate.ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+# Server configuration
+server:
+  port: 8081
+  
